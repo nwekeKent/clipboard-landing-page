@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+// color variables
+$light-blue: hsl(233, 100%, 69%);
+$strong-cyan: hsl(171, 66%, 44%);
+$p-color:  hsl(201, 11%, 66%);
+$heading-color: hsl(210, 10%, 33%);
+
+//set font variables
+$default-font: 'Bai Jamjuree', sans-serif;
+$font-size: 18px;
+$light: 400;
+$bold: 600;
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  // set height and no horizontal scroll
+  html body {
+    height: auto;
+    overflow-x: hidden;
+    font-family: $default-font;
+  
+    //remove form autofill background color
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+      box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    } 
+  }
+  
+  
+  // customize scrollbar 
+  
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+    // Track 
+  ::-webkit-scrollbar-track {
+    background: $light; 
+  }
+   
+    // Handle
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+    // Handle hover
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  
+  // default tag styles
+  
+  p {
+    color: $p-color;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+      color: $heading-color
+  }
+
+  img {
+     height: auto;
+  }

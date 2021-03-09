@@ -1,0 +1,21 @@
+%button {
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    padding: 1.8% 3.5%;
+    color: #fff;
+    font-family: $default-font;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 9px;
+}
+
+.ios--btn {
+    @extend %button;
+    background-color: $strong-cyan;
+}
+
+.mac--btn {
+    @extend %button;
+    background-color: $light-blue;
+}
