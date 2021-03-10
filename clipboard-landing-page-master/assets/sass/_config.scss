@@ -61,7 +61,7 @@ $bold: 600;
   
   // default tag styles
   
-  p {
+  p,li {
     color: $p-color;
   }
   
@@ -79,4 +79,8 @@ $bold: 600;
 
   img {
      height: auto;
+  }
+
+  ul {
+    list-style-type:none;
   }
